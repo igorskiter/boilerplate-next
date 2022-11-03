@@ -1,8 +1,8 @@
-import { appWithTranslation } from 'next-i18next'
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
-import { ThemeProvider, DefaultTheme } from 'styled-components'
-import GlobalStyle from '../components/globalstyles'
+import { appWithTranslation } from 'next-i18next';
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+import { ThemeProvider, DefaultTheme } from 'styled-components';
+import GlobalStyle from '../components/globalstyles';
 
 const theme: DefaultTheme = {
   colors: {

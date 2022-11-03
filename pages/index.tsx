@@ -1,12 +1,12 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import {
   Container,
   Main,
   Title,
   Description,
   CodeTag,
-} from '../components/sharedstyles'
-import Cards from '../components/cards'
+} from '../components/sharedstyles';
+import Cards from '../components/cards';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';

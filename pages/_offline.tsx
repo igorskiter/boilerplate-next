@@ -1,5 +1,3 @@
-import Head from 'next/head'
-
 const Fallback = () => (
   <>
     <h1>This is offline fallback page</h1>
@@ -7,5 +5,4 @@ const Fallback = () => (
   </>
 )
 
-export default Fallback
-;
+export default Fallback;
