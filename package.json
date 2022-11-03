@@ -15,9 +15,6 @@
     "e2e": "start-server-and-test start http://localhost:3000 cypress",
     "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
-  "lint-staged": {
-    "./*": "yarn eslint:fix ."
-  },
   "dependencies": {
     "@sentry/nextjs": "^7.17.4",
     "framer-motion": "^7.6.4",
