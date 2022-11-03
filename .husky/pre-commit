@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+# TODO: yarn docker not working with lint-staged
+yarn lint-staged
