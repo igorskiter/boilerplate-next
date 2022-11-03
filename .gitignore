@@ -26,10 +26,17 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-.env*.local
+.env*
+!.env.example
 
 # vercel
 .vercel
+
+#public
+**/public/workbox-*.js
+**/public/sw.js
+**/public/workbox-*.js.map
+**/public/sw.js.map
 
 # typescript
 *.tsbuildinfo
