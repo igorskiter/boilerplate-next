@@ -7,7 +7,11 @@
     "eslint:init": "yarn eslint --init",
     "eslint:fix": "yarn eslint --fix .",
     "husky:prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run --spec",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress",
+    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
   "lint-staged": {
     "./*": "yarn eslint:fix ."
@@ -31,9 +35,11 @@
     "@types/styled-components": "^5.1.25",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
+    "cypress": "^10.11.0",
     "eslint": "^8.26.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.10",
@@ -41,6 +47,8 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
-    "typescript": "^4.8.4"
+    "start-server-and-test": "^1.14.0",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0"
   }
 }
