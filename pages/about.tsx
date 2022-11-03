@@ -11,5 +11,5 @@ export default function About() {
         </Description>
       </Main>
     </Container>
-  )
+  );
 }

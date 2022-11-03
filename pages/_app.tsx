@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -9,7 +10,7 @@ const theme: DefaultTheme = {
     primary: '#111',
     secondary: '#0070f3',
   },
-}
+};
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -23,6 +24,6 @@ function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
 export default appWithTranslation(App);
