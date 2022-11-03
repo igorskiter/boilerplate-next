@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 # TODO: yarn docker not working with lint-staged
-npx e2e:headless && yarn teste && yarn lint-staged
+yarn e2e:headless && yarn test && yarn lint-staged
