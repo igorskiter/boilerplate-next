@@ -34,8 +34,8 @@ Este boilerplate é um ponto de partida para projetos que utilizam Next.js. Ele 
 ## Env vars
 
 | Name| Description | Get From | Where to store/setup | Default
-| --- | --- | --- | --- | ---
-|  |  | |  |
+| --- | ---         | ---      | ---                  | ---
+|     |             |          |                      |
 
 ## Scripts disponíveis
 
@@ -98,7 +98,6 @@ Executa os testes end-to-end em modo headless.
 
 - Next.js - Framework de renderização de páginas em React;
 - React - Biblioteca JavaScript para construir interfaces de usuário;
-- Styled Components - Biblioteca para escrever CSS em JavaScript;
 - Framer Motion - Biblioteca de animações;
 - Moment - Biblioteca para manipulação de datas e horas;
 - UUID - Biblioteca para geração de identificadores únicos;
@@ -108,14 +107,17 @@ Executa os testes end-to-end em modo headless.
 
 ## Dependências de Desenvolvimento
 
-- Jest - Framework de testes;
-- Cypress - Ferramenta de testes end-to-end;
-- Eslint - Ferramenta de análise de código;
-- Prettier - Formatador de código;
-- Husky - Biblioteca para automatizar hooks do git;
-- Lint-staged - Biblioteca para rodar linters em arquivos modificados no commit;
-- TypeScript - Superset do JavaScript;
-- Webpack - Bundler de módulos;
+- Test
+  - Jest - Framework de testes;
+  - Cypress - Ferramenta de testes end-to-end;
+- Lint
+  - Eslint - Ferramenta de análise de código;
+  - Prettier - Formatador de código;
+  - Husky - Biblioteca para automatizar hooks do git;
+  - Lint-staged - Biblioteca para rodar linters em arquivos modificados no commit;
+- Package
+  - TypeScript - Superset do JavaScript;
+  - Webpack - Bundler de módulos;
 
 ## app
 
