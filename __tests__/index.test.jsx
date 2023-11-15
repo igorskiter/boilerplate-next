@@ -1,6 +1,6 @@
 
 import { render, screen } from '@testing-library/react';
-import Home from '../pages/index.tsx';
+import Home from '../app/page.tsx';
 
 import '@testing-library/jest-dom';
 
