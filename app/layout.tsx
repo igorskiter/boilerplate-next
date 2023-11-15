@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 
 // These styles apply to every route in the application
+// eslint-disable-next-line import/no-unresolved
 import './globals.css';
 
 export const metadata: Metadata = {
