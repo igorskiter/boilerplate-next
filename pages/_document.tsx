@@ -1,5 +1,4 @@
 import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
 
 function MyDocument() {
   return <Html lang="en">
@@ -83,23 +82,21 @@ function MyDocument() {
 }
 
 MyDocument.getInitialProps = async (ctx: DocumentContext) => {
-  const sheet = new ServerStyleSheet();
   const originalRenderPage = ctx.renderPage;
 
   try {
     ctx.renderPage = () =>
       originalRenderPage({
-        enhanceApp: (App) => (props) =>
-          sheet.collectStyles(<App {...props} />),
+        enhanceApp: (App) => (props) =><App {...props} />,
       });
 
     const initialProps = await Document.getInitialProps(ctx);
     return {
       ...initialProps,
-      styles: [initialProps.styles, sheet.getStyleElement()],
+      styles: [initialProps.styles],
     };
   } finally {
-    sheet.seal();
+    console.log('finally');
   }
 };
 

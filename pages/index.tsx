@@ -1,14 +1,11 @@
-import Head from 'next/head';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Cards from '../components/cards';
+import Card from '../components/cards';
 import {
-  Container,
-  Main,
-  Title,
-  Description,
-  CodeTag,
+  CodeTag, Container, Description, Main,
+  Title
 } from '../components/sharedstyles';
 import handleLocaleChange from '../utils/localeChange';
 
@@ -39,7 +36,7 @@ export default function Home() {
           <CodeTag>pages/index.tsx</CodeTag>
         </Description>
 
-        <Cards />
+        <Card link='/about' name='About Page &rarr;' />
       </Main>
     </Container>
   );
